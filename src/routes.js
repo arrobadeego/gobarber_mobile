@@ -1,4 +1,4 @@
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
 
 const Routes = createAppContainer();
 
