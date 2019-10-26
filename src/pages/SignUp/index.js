@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Image } from 'react-native';
-import { useDispatch, useState } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import Background from '../../components/Background';
 import { signUpRequest } from '../../store/modules/auth/actions';
