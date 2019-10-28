@@ -28,11 +28,22 @@ export default (isSigned = false) =>
                     {
                         Dashboard,
                         New: {
-                            screen: createStackNavigator({
-                                SelectProvider,
-                                SelectDateTime,
-                                Confirm,
-                            }),
+                            screen: createStackNavigator(
+                                {
+                                    SelectProvider,
+                                    SelectDateTime,
+                                    Confirm,
+                                },
+                                {
+                                    defaultNavigationOptions: {
+                                        headerTransparent: true,
+                                        headerTintColor: '#fff',
+                                        headerLeftContainerStyle: {
+                                            marginLeft: 20,
+                                        },
+                                    },
+                                }
+                            ),
                             navigationOptions: {
                                 tabBarVisible: false,
                                 tabBarLabel: 'Agendar',
